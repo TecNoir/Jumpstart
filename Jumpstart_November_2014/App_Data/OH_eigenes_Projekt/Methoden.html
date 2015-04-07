@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Übung zu Methoden in JS</title>
+</head>
+<body>
+    <h3>Und es bewegt sich doch</h3>
+    <script type="text/javascript">
+        function Raumschiff (Schiffsname, Schiffsmodell, Kapitaen)
+        {
+            this.Name = Schiffsname;
+            this.Modell = Schiffsmodell;
+            this.Kapitaen = Kapitaen;
+            this.Entfernung = 0;
+            this.entfernen = VonErdeEntfernen;
+            this.zurueck = ZurueckZurErde;
+        }
+         
+        function Person (PersonName, PersonVorname, Geschlecht, Rasse)
+        {
+            this.Nachname = PersonName;
+            this.Vorname = PersonVorname;
+            this.Name = PersonVorname + "" + PersonName;
+            this.Geschlecht = Geschlecht;
+            this.Rasse = Rasse;
+                    }
+
+            function VonErdeEntfernen(Lichtjahre)       
+            {
+                this.Entfernung += Lichtjahre;
+                document.write(this.Name + " => Aktuelle Reise: " + Lichtjahre +
+                " Lichtjahre -> Erdentfernung: "+this.Entfernung+" Lichtjahre<br>");
+
+            }
+
+            function ZurueckZurErde(Lichtjahre)
+            {
+                this.Entfernung -= Lichtjahre;
+                if(this.Entfernung > 0)
+                    document.write(this.Name + " kommt zurück zur Erde: nur noch " + this.Entfernung + "Lichtjahre;<br>");
+                else if(this.Entfernung == 0)
+                    document.write("Willkommen zu Hause auf der Erde, " + this.Name + "!<br><br>");
+                else 
+                    document.write(this.Name + "ist bereits auf der Erde gelandet!<br>");
+                        }
+
+            var Enterprise = new Raumschiff("U.S.S Enterprise", "NCC-1701");
+
+            var Kathryn = new Person("Janeway", "Kathryn", "weiblich", "Mensch");
+            var Voyager = new Raumschiff("U.S.S. Voyager", "NCC-74656", Kathryn);
+
+            document.write("<p> Eigenschaften der Objektinstanz 'Voyager':<br>");
+
+            var i = 1;
+            for (eigenschaft in Voyager)
+            {
+                document.write(i + ". Eigenschaft: " + eigenschaft + "<br>");
+            }
+
+        document.write("<p>Das Raumschiff ist von der Erde gestartet:<br>");
+        Enterprise.entfernen(50);
+        Enterprise.entfernen(100);
+        Enterprise.zurueck(50);
+        Enterprise.zurueck(100);
+        Enterprise.zurueck(50);
+
+
+            
+
+
+   </script>
+
+</body>
+</html>

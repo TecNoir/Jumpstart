@@ -1,0 +1,6 @@
+C:\Users\kk2\Documents\Workspace\Schulungen\Jumpstart\Tag2\Tag2\bin\Tag2.dll.config
+C:\Users\kk2\Documents\Workspace\Schulungen\Jumpstart\Tag2\Tag2\bin\Tag2.dll
+C:\Users\kk2\Documents\Workspace\Schulungen\Jumpstart\Tag2\Tag2\bin\Tag2.pdb
+C:\Users\kk2\Documents\Workspace\Schulungen\Jumpstart\Tag2\Tag2\obj\Debug\Tag2.csprojResolveAssemblyReference.cache
+C:\Users\kk2\Documents\Workspace\Schulungen\Jumpstart\Tag2\Tag2\obj\Debug\Tag2.dll
+C:\Users\kk2\Documents\Workspace\Schulungen\Jumpstart\Tag2\Tag2\obj\Debug\Tag2.pdb

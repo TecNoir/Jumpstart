@@ -1,0 +1,15 @@
+@import url(mini-reset.css);
+
+/* ----------------------------------------------------- Browser specific CSS */
+
+.js div { } /* apply only on JavaScript enabled browsers */
+.ie7 div { } /* apply only on Internet Explorer 7 and below */
+.ie6 div { } /* apply only on Internet Explorer 6 and below */
+
+/* ----------------------------------------------------- smaller screens */
+
+@media only screen and (max-width: 640px) { }
+
+/* ----------------------------------------------------- huge screens */
+
+@media only screen and (min-width: 1280px) { }

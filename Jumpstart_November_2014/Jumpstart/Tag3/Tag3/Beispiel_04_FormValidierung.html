@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Anmeldeformular</title>
+    <link rel="stylesheet" type="text/css" href="Beispiel_04_FormValidierung.css" />
+    <script src="Beispiel_04_FormValidierung.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Anmeldeformular</h1>
+    <form>
+        <div class="title">
+            Benutzername:
+        </div>
+        <input type="text" id="user" name="u" required />
+        <div id="userinfo" class="info"></div>
+        <br/>
+        <div class="title">
+            Passwort:
+        </div>
+        <input type="password" id="pw" name="p" required />
+        <div id="pwinfo" class="info"></div>
+        <br />
+        <div class="title">
+            E-Mail:
+        </div>
+        <input type="text" id="mail" name="em" required />
+        <div id="mailinfo" class="info"></div>
+    </form>
+    <br/>
+    <button id="sendForm">
+        Senden
+    </button>
+    <button id="clearForm">
+        Zurücksetzen
+    </button>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DOM Manipulation</title>
+    <!--<style>
+        #output {
+            width:200px;
+        }
+    </style>-->
+    <script type="text/javascript">
+        function display() {
+            var oTag = document.getElementById("txtTag");
+            var oOutput = document.getElementById("output");
+
+            oOutput.innerHTML = "hallo <strong>" + oTag.value + "</strong>";
+            oOutput.style.color = "red";
+            oOutput.style.backgroundColor = "yellow";
+            oOutput.style.width = "200px";
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="txtTag" />
+        <button type="button" onclick="display()">
+            Anzeigen
+        </button>
+    </form>
+    <p>Was gibt es über diesen Tag zu sagen?
+        <div id="output"></div>
+    </p>
+</body>
+</html>

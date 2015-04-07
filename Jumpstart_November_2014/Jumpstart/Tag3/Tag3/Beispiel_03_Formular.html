@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Formular senden</title>
+</head>
+<body>
+    <h1>Formular</h1>
+    <form method="post">
+        <input name="a" />
+        <input name="b" />
+        <input name="c" />
+        <br />
+        <input type="button" value="Wegschicken" onclick="sendForm()" />
+        <input type="button" value="Zurücksetzen" onclick="clearForm()" />
+    </form>
+    
+    <script>
+        function sendForm() {
+            window.document.forms[0].submit();
+        };
+
+        function clearForm() {
+            document.forms[0].reset();
+        };
+        window.document.forms[0].action = "Formular.aspx";
+    </script>
+</body>
+</html>

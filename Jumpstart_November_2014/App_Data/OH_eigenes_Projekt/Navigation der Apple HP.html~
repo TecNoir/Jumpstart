@@ -1,0 +1,27 @@
+<body class="page-home">
+<nav id="globalheader" class="globalheader" lang="en-US" data-analytics-region="global nav" data-hires="false" aria-label="Global Navigation" role="navigation">
+<div id="gh-content" class="gh-content">
+<ul class="gh-menu">
+<li id="gh-menu-icon-toggle" class="gh-menu-icon gh-menu-icon-toggle enhance">
+<li id="gh-menu-icon-home" class="gh-menu-icon gh-menu-icon-home">
+</ul>
+<div class="gh-nav">
+<div class="gh-nav-view">
+<ul class="gh-nav-list">
+<li class="gh-tab gh-tab-apple">
+<a class="gh-tab-link" href="/" data-analytics-click="prefix:t,prop3:undefined" onclick="s_objectID="http://www.apple.com/_2";return this.s_oc?this.s_oc(e):true">
+</li>
+<li class="gh-tab gh-tab-store">
+<li class="gh-tab gh-tab-mac">
+<li class="gh-tab gh-tab-iphone">
+<li class="gh-tab gh-tab-watch">
+<li class="gh-tab gh-tab-ipad">
+<li class="gh-tab gh-tab-ipod">
+<li class="gh-tab gh-tab-itunes">
+<li class="gh-tab gh-tab-support">
+<li id="gh-tab-search" class="gh-tab gh-tab-search enhance">
+</ul>
+</div>
+</div>
+</div>
+</nav>

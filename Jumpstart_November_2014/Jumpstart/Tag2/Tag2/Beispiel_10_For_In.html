@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- For In berücksichtigt nur zugewiesene Werte -->
+    <title>Kontrollstrukturen - For In Schleife</title>
+    <script>
+        var array = new Array(4); // [] -> Alternative Array Initialisierung
+        var index;
+
+        array[0] = 33;
+        array[1] = 44;
+        array[3] = 66;
+
+        document.write("////////////// For In ///////////////" + "<br/>");
+
+        for (index in array) {
+            document.write(array[index] + "<br />");
+        }
+
+        document.write("////////////// For ///////////////" + "<br />");
+        
+        for (var i = 0; i < array.length; i++) {
+            document.write(array[i] + "<br/>");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

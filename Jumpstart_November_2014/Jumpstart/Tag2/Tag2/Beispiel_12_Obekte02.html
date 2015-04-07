@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Objekte Teil 2</title>
+</head>
+<body>
+    <script>
+        // 1. Buch Objekt
+        var buch = {
+            ISBN: "12345",
+            Laenge: 560,
+            Author: "Nick Hornby",
+            Genre: "Drama",
+            Title: "About a boy",
+            AktuelleSeite: 23,
+            zurSeite: function zurSeiteBlaettern(sNum) {
+                this.AktuelleSeite = sNum;
+            },
+            vorwaerts: function vorwaertsBlaettern() {
+                this.zurSeite(this.AktuelleSeite++);
+            },
+            zurueck: function zurueckBlaettern() {
+                this.zurSeite(this.AktuelleSeite--);
+            }
+        }
+
+        // Methoden verwenden
+        buch.vorwaerts();
+        buch.zurSeite(99);
+
+        // 2. Konstruktorfunktion -> Prototyp des Buchs erstellen
+        function Buch() {
+            this.ISBN = "123456";
+            this.Length = 789;
+            this.genre = "Programmierung";
+            this.author = "Bill Gates";
+        }
+
+        // Instanzen
+        var programmiererBuch = new Buch();
+
+        // 3. Prototyping -> Dynamisches Hinzufügen von Eigenschaften
+        function Buch() {
+            // leeres Buch erzeugt
+        }
+
+        function Buch(title, laenge, autor) {
+            this.title = title;
+            this.laenge = laenge;
+            this.autor = autor;
+        }
+
+        Buch.prototype = {
+            ISBN: "",
+            Laenge: -1,
+            genre: "",
+            autor: new Autor(),
+            title: "",
+            aktuelleSeite: 0,
+            zurSeite: function zurSeiteBlaettern(sNum) {
+                this.AktuelleSeite = sNum;
+            },
+            vorwaerts: function vorwaertsBlaettern() {
+                this.zurSeite(this.AktuelleSeite++);
+            },
+            zurueck: function zurueckBlaettern() {
+                this.zurSeite(this.AktuelleSeite--);
+            }
+        }
+
+        function Autor() { }
+        function Autor(vorname, nachname) {
+            this.vorname = vorname;
+            this.nachname = nachname;
+        }
+        Autor.prototype = {
+            vorname: "",
+            nachname: ""
+        }
+
+        var bestseller = new Buch();
+        var ladenhueter = new Buch("Läuft nicht", 1, new Autor("Jürgen", "Klopp"));
+
+     </script>
+</body>
+</html>

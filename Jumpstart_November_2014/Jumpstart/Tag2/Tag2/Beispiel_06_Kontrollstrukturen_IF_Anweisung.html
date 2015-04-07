@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JS Kontrollstrukturen</title>
+    <script type="text/javascript">
+        // IF Anweisung
+        function display() {
+            var tag = document.getElementById("txtTag");
+            if (tag.value === "Montag") {
+                alert("Garfield sagt: Ich hasse Montage! (Außer in Düssekdif)");
+            } else {
+                alert("Wenigstens nicht Montag...");
+            }
+        };
+
+        function displaySwitch() {
+            var tag = document.getElementById("txtTag");
+
+            switch (tag.value) {
+                case "Montag", "Dienstag":
+                    alert("Garfield sagt: Ich liebe Montage, außer Dienstag");
+                    break;
+                case "Mittwoch":
+                    alert("Auch besser als Bergfest bekannt");
+                    break;
+                case "Donnerstag":
+                    alert("Kurz vor Freitag");
+                    break;
+                case "Freitag":
+                    alert("Es ist Freitag");
+                    break;
+                default:
+                    alert("Wochenende...!");
+            }
+        };
+    </script>
+</head>
+<body>
+    <form>
+        Tag: <input type="text" id="txtTag" />
+        <button type="button" onclick="displaySwitch()">
+            Anzeigen
+        </button>
+    </form>
+</body>
+</html>

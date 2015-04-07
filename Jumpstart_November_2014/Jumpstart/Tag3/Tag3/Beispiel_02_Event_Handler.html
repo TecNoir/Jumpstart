@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Eventhancler</title>
+    <script>
+        const BLACK = "black";
+
+        window.onload = function () {
+            document.getElementById('btnShow').addEventListener("click", display);
+        };
+
+        function display() {
+            var oName = document.getElementById('txtName');
+            var oOutput = document.getElementById('lblOutput');
+
+            oOutput.innerHTML = oName.value;
+            
+            oOutput.addEventListener("mouseover", highlight);
+            oOutput.addEventListener("mouseout", function () {
+            
+                oOutput.style.color = BLACK;
+                oOutput.style.backgroundColor = getBackgroundColor();
+            });
+        }
+
+        function getBackgroundColor() {
+            return document.bgColor;
+        }
+
+        function highlight() {
+            var oOutput = document.getElementById('lblOutput');
+            oOutput.style.color = "red";
+            oOutput.style.backgroundColor = "yellow";
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        Name: <input type="text" id="txtName" />
+        <button type="button" id="btnShow">
+            Anzeigen
+        </button>
+    </form>
+    <p id="desc">
+        Was gibt es über diesen Tag zu sagen?
+        <div id="lblOutput"></div>
+    </p>
+</body>
+</html>

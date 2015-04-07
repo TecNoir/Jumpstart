@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Die If-Anweisung. Einfache Bedingung mit einer Auswahlmöglichkeit</title>
+    <script type="text/javascript">
+       function display() {
+            var Zugriff = document.getElementById("zugriff");
+            if (Zugriff.value == "HSV") {
+                alert("Nur der HSV");
+            }
+            else {
+                alert("Ich glaub Du spinnst!");
+                            }
+        };
+
+        function displaySwitch() {
+            var Zugriff = document.getElementById("zugriff");
+
+            switch (Zugriff.value) {
+                case "Bernd":
+                    alert("Ich lach mich kaputt");
+                    break;
+                case "Louis":
+                    alert("Im Leben net...");
+                    break;
+                case "Pit Hein":
+                    alert("Der Käskopp? Quatsch");
+                    break;
+                case "Miguel":
+                    alert("Du Jeck!");
+                    break;
+                case "Franz":
+                    alert("So ist es!");
+                    break;
+                default:
+                    alert("Da bin ich mir nicht so sicher");
+            }
+
+        };
+
+
+
+
+    </script>
+</head>
+<body>
+    <form style="background-color: silver; border: 2px solid black;">
+        Wer ist der beste Skifahrer von Tux?: <input type="text" id="zugriff" style="background-color: lightblue; " />
+        <button type="button" onclick="displaySwitch()">Anzeigen</button>
+    </form>
+</body>
+</html>

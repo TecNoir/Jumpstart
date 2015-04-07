@@ -1,0 +1,1123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jumpstart_November_2014</RootNamespace>
+    <AssemblyName>Jumpstart_November_2014</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.1\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="App_Data\OH_eigenes_Projekt\diverse Übungen zu JS\conlog ausprobieren.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\diverse Übungen zu JS\if_einfache Bedingung.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\diverse Übungen zu JS\kap03_ausführungsreihenfolge.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\diverse Übungen zu JS\kap03_avascript_test.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\diverse Übungen zu JS\typeof ausprobieren.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\diverse Übungen zu JS\Variablen.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\diverse Übungen zu JS\Variablen_02.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\diverse Übungen zu JS\Variablen_03.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Erzeugung eines Objekts.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\favicon.ico" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\bloggr.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\deviantart.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\digg.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\dribbble.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\email.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\evernote.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\facebook.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\flickr.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\forrst.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\google-plus.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\instagram.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\linkedin.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\pinterest.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\readme.txt" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\rss.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\share.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\simple-flat-social-icons.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\skype.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\stumbleupon.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\tumblr.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\twitter.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\vimeo.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\youtube.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\css\flat-ui.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\css\flat-ui.min.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\css\vendor\bootstrap.min.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\glyphicons\flat-ui-icons-regular.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-black.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-bold.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-bolditalic.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-italic.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-light.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-regular.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\favicon.ico" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Book.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Calendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Chat.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Clipboard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Compas.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Gift-Box.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Infinity-Loop.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Mail.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Map.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Pensils.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Pocket.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Retina-Ready.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Toilet-Paper.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\png\Watches.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\book.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\calendar.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\chat.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\clipboard.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\clocks.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\compas.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\gift-box.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\loop.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\mail.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\map.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\paper-bag.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\pencils.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\retina.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\ribbon.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\icons\svg\toilet-paper.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\login\icon.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\login\imac-2x.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\login\imac.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\tile\ribbon-2x.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\img\tile\ribbon.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\index.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\js\flat-ui.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\js\flat-ui.min.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\js\vendor\html5shiv.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\js\vendor\jquery.min.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\js\vendor\respond.min.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\js\vendor\video-js.swf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\css\demo.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\css\docs.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser-2x.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser-author.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser-pic-1.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser-pic-2.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser-pic-3.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser-pic-4.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser-pic-5.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser-pic-6.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\browser.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\html-icon.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\logo-mask-2x.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\logo-mask.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\demo\video.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\example-image.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\footer\logo.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\getting-started\icomoon_import.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\img\video\poster.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\js\application.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\js\prettify.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\components.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\buttons.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\dropdowns.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\forms.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\navbar-fixed-top.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\navbar-static-top.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\navbars-with-elements.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\navbars.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\pagination.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\radiocheck.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\select.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\switches.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\tagsinput.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\thumbnails.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\tiles.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\todo-list.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\tooltips.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\typography.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\examples\vertical-slider.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\getting-started.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\template.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\glyphicons\flat-ui-icons-regular.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-black.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-bold.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-bolditalic.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-italic.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-light.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-regular.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\Gruntfile.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Book.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Calendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Chat.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Clipboard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Compas.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Gift-Box.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Infinity-Loop.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Mail.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Map.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Pensils.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Pocket.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Retina-Ready.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Toilet-Paper.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\png\Watches.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\book.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\calendar.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\chat.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\clipboard.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\clocks.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\compas.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\gift-box.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\loop.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\mail.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\map.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\paper-bag.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\pencils.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\retina.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\ribbon.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\icons\svg\toilet-paper.svg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\login\icon.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\login\imac-2x.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\login\imac.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\tile\ribbon-2x.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\img\tile\ribbon.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\index.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\js\radiocheck.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Hannus-Logo.jpg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\HannusWeb_Eigenbau.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\HannusWeb_Eigenbau.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\HannusWeb_mit bunten Flat icons.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\HannusWeb_mit bunten Flat icons.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\about.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\apple19.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\apple_color.jpeg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\Chat.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\code.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\download1.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\earth16.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\facebook.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\google-plus.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\google20.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\group.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\home1.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\linux1.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\Linux_tux.jpeg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\Mail.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\Mail_75x75.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\Map.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\messages1.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\Microsoft_Kacheln.jpeg" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\pinterest.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\program1.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\robot30.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\t3n.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\tear.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\twitter.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\iCons\wine4.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\css\mini-reset.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\css\print.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\css\screen.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\img\favicon.ico" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\index.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\js\domscript.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\js\html5shiv.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\js\jquery-1.10.2.min.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\js\jquery-2.0.3.min.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\js\zepto.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\readme.txt" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Layout mit CSS\Layout2sp.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Layout mit CSS\Zweispalter mit Float.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Methoden.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\mit bunten flat icons\HannusWeb_mit bunten Flat icons.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Objekte_verbinden.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Book.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Book_75x75.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Calendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Calendar_75x75.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Chat.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Clipboard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Clipboard_75x75.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Compas.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Compas_75x75.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Gift-Box.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Gift-Box_75x75.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Infinity-Loop.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Mail.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Map.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Pensils.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Pocket.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Retina-Ready.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Retina-Ready_75x75.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Toilet-Paper.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\png\Watches.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Unterseite_aboutUs.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Unterseite_Downloads.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Unterseite_Impressum.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\videos\VfE_html5.mp4" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\css\custom-grids.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\css\flexible-columns.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\css\flexible-grids.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\css\rtl-support.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\css\screen\screen-custom-grids.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\css\screen\screen-rtl-support.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\custom-grid.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\flexible-columns.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\flexible-grid.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\demos\rtl-support.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\external_link.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\hcalendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\hcard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-geo.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-hatom.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-haudio.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-hcalendar-add.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-hcalendar-download.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-hcalendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-hcard-add.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-hcard-download.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-hcard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-hresume.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-rel-tag.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\icon-xfn.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-child.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-colleague-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-colleague.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-friend-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-friend.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-me.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-parent.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-small.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-spouse.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-sweetheart-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\icons\xfn\xfn-sweetheart.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\layout-min.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\css\layout.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\images\demo-custom-grid.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\images\demo-flex-column.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\images\demo-flex-grid.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\images\demo-rtl.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\images\yaml-solo-transparent-small.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\images\yaml-solo-transparent.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\js\domscript.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\js\jquery.gridbuilder.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\js\snippet\jquery.snippet.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\js\snippet\jquery.snippet.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\js\snippet\jquery.snippet.min.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\js\snippet\jquery.snippet.min.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\js\snippet\snippet.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\assets\js\snippet\ZeroClipboard.swf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\docs\index.html" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\Gruntfile.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\lib\html5shiv\html5shiv-printshiv.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\lib\html5shiv\html5shiv.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\lib\jquery-1.10.1.min.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\lib\jquery-migrate-1.2.1.min.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\License.txt" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\accessible-tabs\jquery.tabs.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\external_link.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\hcalendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\hcard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-geo.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-hatom.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-haudio.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-hcalendar-add.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-hcalendar-download.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-hcalendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-hcard-add.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-hcard-download.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-hcard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-hresume.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-rel-tag.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\icon-xfn.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-child.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-colleague-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-colleague.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-friend-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-friend.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-me.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-parent.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-small.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-spouse.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-sweetheart-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\icons\xfn\xfn-sweetheart.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\syncheight\jquery.syncheight.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\js\yaml-focusfix.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\accessible-tabs\jquery.tabs.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\accessible-tabs\tabs.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\external_link.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\hcalendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\hcard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-geo.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-hatom.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-haudio.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-hcalendar-add.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-hcalendar-download.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-hcalendar.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-hcard-add.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-hcard-download.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-hcard.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-hresume.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-rel-tag.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\icon-xfn.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-child.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-colleague-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-colleague.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-friend-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-friend.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-me.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-parent.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-small.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-spouse.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-sweetheart-met.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\icons\xfn\xfn-sweetheart.png" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\microformats\microformats.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\rtl-support\core\base-rtl.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\rtl-support\core\base-rtl.min.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\rtl-support\forms\gray-theme-rtl.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\rtl-support\navigation\hlist-rtl.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\rtl-support\navigation\vlist-rtl.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\rtl-support\screen\typography-rtl.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\add-ons\syncheight\jquery.syncheight.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\core\base.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\core\base.min.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\core\iehacks.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\core\iehacks.min.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\core\js\yaml-focusfix.js" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\forms\gray-theme.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\navigation\hlist.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\navigation\vlist.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\print\print.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\screen\grid-960gs-12.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\screen\grid-960gs-16.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\screen\grid-blueprint.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\screen\grid-fluid-12col.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\screen\screen-FULLPAGE-layout.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\screen\screen-PAGE-layout.css" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\yaml\screen\typography.css" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Jumpstart\MS_Books_70480.txt" />
+    <Content Include="Jumpstart\Tag1\beispiel02_bilder.html" />
+    <Content Include="Jumpstart\Tag1\beispiel03_tabellen.html" />
+    <Content Include="Jumpstart\Tag1\beispiel04_listen.html" />
+    <Content Include="Jumpstart\Tag1\img\d_big.jpg" />
+    <Content Include="Jumpstart\Tag1\img\d_small.jpg" />
+    <Content Include="Jumpstart\Tag1\index.html" />
+    <Content Include="Jumpstart\Tag1\Neues Textdokument.txt" />
+    <Content Include="Jumpstart\Tag1\Tag1.sln" />
+    <Content Include="Jumpstart\Tag1\Tag1\bin\Tag1.dll" />
+    <Content Include="Jumpstart\Tag1\Tag1\bin\Tag1.pdb" />
+    <Content Include="Jumpstart\Tag1\Tag1\css\absolute.css" />
+    <Content Include="Jumpstart\Tag1\Tag1\css\fixed.css" />
+    <Content Include="Jumpstart\Tag1\Tag1\css\relative.css" />
+    <Content Include="Jumpstart\Tag1\Tag1\CSS_Selekotren.html" />
+    <Content Include="Jumpstart\Tag1\Tag1\CSS_Transition.html" />
+    <Content Include="Jumpstart\Tag1\Tag1\DIVPositionierung.html" />
+    <Content Include="Jumpstart\Tag1\Tag1\Formulare.html" />
+    <Content Include="Jumpstart\Tag1\Tag1\HTML5Semantic.html" />
+    <Content Include="Jumpstart\Tag1\Tag1\img\d_big.jpg" />
+    <Content Include="Jumpstart\Tag1\Tag1\img\d_small.jpg" />
+    <Content Include="Jumpstart\Tag1\Tag1\MediaQueries.html" />
+    <Content Include="Jumpstart\Tag1\Tag1\obj\Debug\Tag1.csproj.FileListAbsolute.txt" />
+    <Content Include="Jumpstart\Tag1\Tag1\obj\Debug\Tag1.dll" />
+    <Content Include="Jumpstart\Tag1\Tag1\obj\Debug\Tag1.pdb" />
+    <Content Include="Jumpstart\Tag1\Tag1\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Content Include="Jumpstart\Tag1\Tag1\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Content Include="Jumpstart\Tag1\Tag1\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Content Include="Jumpstart\Tag1\Tag1\Properties\AssemblyInfo.cs" />
+    <Content Include="Jumpstart\Tag1\Tag1\Tag1.csproj" />
+    <Content Include="Jumpstart\Tag1\Tag1\Tag1.csproj.user" />
+    <Content Include="Jumpstart\Tag1\Tag1\Video.html" />
+    <Content Include="Jumpstart\Tag1\Tag1\video\video.mp4" />
+    <Content Include="Jumpstart\Tag1\video\video.mp4" />
+    <Content Include="Jumpstart\Tag2\Tag2.sln" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_01_Basics.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_02_Funktionen.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_03_Variablen.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_04_Variablen_RechenOperatoren.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_05_TypeOf_Operator.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_06_Kontrollstrukturen_IF_Anweisung.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_07_Kontrollstrukturen_For_Schleife.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_08_Do_While.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_09_While_Schleife.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_10_For_In.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_11_Objekte01.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_12_Obekte02.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_13_Vordefinierte_Objekte.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_14_DOM.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\Beispiel_15_JS_DOM_CSS_Anim.html" />
+    <Content Include="Jumpstart\Tag2\Tag2\bin\Tag2.dll" />
+    <Content Include="Jumpstart\Tag2\Tag2\bin\Tag2.pdb" />
+    <Content Include="Jumpstart\Tag2\Tag2\img\flitzer.jpg" />
+    <Content Include="Jumpstart\Tag2\Tag2\js\script.js" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\Tag2.csproj.FileListAbsolute.txt" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\Tag2.dll" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\Tag2.pdb" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Content Include="Jumpstart\Tag2\Tag2\Properties\AssemblyInfo.cs" />
+    <Content Include="Jumpstart\Tag2\Tag2\Tag2.csproj" />
+    <Content Include="Jumpstart\Tag2\Tag2\Tag2.csproj.user" />
+    <Content Include="Jumpstart\Tag3\Tag3.sln" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_01_DOM_Manipulation.html" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_02_Event_Handler.html" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_03_Formular.html" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_04_FormValidierung.css" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_04_FormValidierung.html" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_04_FormValidierung.js" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_05_JqueryBasics.html" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_06_AJAX.html" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_07_Angular.html" />
+    <Content Include="Jumpstart\Tag3\Tag3\Beispiel_08_Bootstrap.html" />
+    <Content Include="Jumpstart\Tag3\Tag3\bin\Tag3.dll" />
+    <Content Include="Jumpstart\Tag3\Tag3\bin\Tag3.pdb" />
+    <Content Include="Jumpstart\Tag3\Tag3\css\bootstrap.min.css" />
+    <Content Include="Jumpstart\Tag3\Tag3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Jumpstart\Tag3\Tag3\Formular.aspx" />
+    <Content Include="Jumpstart\Tag3\Tag3\Formular.aspx.cs" />
+    <Content Include="Jumpstart\Tag3\Tag3\Formular.aspx.designer.cs" />
+    <Content Include="Jumpstart\Tag3\Tag3\js\angular.min.js" />
+    <Content Include="Jumpstart\Tag3\Tag3\js\bootstrap.min.js" />
+    <Content Include="Jumpstart\Tag3\Tag3\js\jquery-2.1.1.min.js" />
+    <Content Include="Jumpstart\Tag3\Tag3\obj\Debug\Tag3.csproj.FileListAbsolute.txt" />
+    <Content Include="Jumpstart\Tag3\Tag3\obj\Debug\Tag3.dll" />
+    <Content Include="Jumpstart\Tag3\Tag3\obj\Debug\Tag3.pdb" />
+    <Content Include="Jumpstart\Tag3\Tag3\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Content Include="Jumpstart\Tag3\Tag3\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Content Include="Jumpstart\Tag3\Tag3\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Content Include="Jumpstart\Tag3\Tag3\Properties\AssemblyInfo.cs" />
+    <Content Include="Jumpstart\Tag3\Tag3\Tag3.csproj" />
+    <Content Include="Jumpstart\Tag3\Tag3\Tag3.csproj.user" />
+    <Content Include="largePic.css" />
+    <Content Include="09032015_largeBackgroundpix\LargePicasBackground.html" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="Jumpstart\Jumpstart_HTML_CSS_JS.pdf" />
+    <Content Include="Jumpstart\Tag1\Tag1.v12.suo" />
+    <Content Include="Jumpstart\Tag1\Tag1\bin\Tag1.dll.config" />
+    <Content Include="Jumpstart\Tag1\Tag1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Jumpstart\Tag1\Tag1\obj\Debug\Tag1.csprojResolveAssemblyReference.cache" />
+    <Content Include="Jumpstart\Tag1\Tag1\video\video.ogv" />
+    <Content Include="Jumpstart\Tag1\Tag1\Web.config" />
+    <Content Include="App_Data\OH_eigenes_Projekt\flat-social-media-icons\simple-flat-social-icons.psd" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\.editorconfig" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\.gitignore" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\bower.json" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\CHANGELOG.md" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\css\flat-ui.css.map" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\glyphicons\flat-ui-icons-regular.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\glyphicons\flat-ui-icons-regular.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\glyphicons\flat-ui-icons-regular.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\glyphicons\selection.json" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-black.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-black.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-black.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-bold.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-bold.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-bold.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-bolditalic.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-bolditalic.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-bolditalic.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-italic.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-italic.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-italic.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-light.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-light.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-light.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-regular.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-regular.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\fonts\lato\lato-regular.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\dist\js\vendor\jquery.min.map" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\css\demo.css.map" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\css\docs.css.map" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\css\src\demo.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\css\src\docs.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\docs\assets\css\src\prettyprint.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\glyphicons\flat-ui-icons-regular.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\glyphicons\flat-ui-icons-regular.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\glyphicons\flat-ui-icons-regular.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\glyphicons\selection.json" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-black.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-black.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-black.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-bold.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-bold.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-bold.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-bolditalic.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-bolditalic.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-bolditalic.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-italic.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-italic.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-italic.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-light.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-light.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-light.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-regular.eot" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-regular.ttf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\fonts\lato\lato-regular.woff" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\js\.jscs.json" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\js\.jshintrc" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\.csscomb.json" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\.csslintrc" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\flat-ui.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\background-clip.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\background-variant.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\border-radius.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\buttons.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\center-block.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\clearfix.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\forms.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\gradients.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\grid.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\hide-text.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\image.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\nav-divider.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\navbar-vertical-align.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\opacity.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\pagination.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\pallets.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\reset-filter.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\resize.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\responsive-visibility.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\select.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\size.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\switches.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\tab-focus.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\text-emphasis.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\text-overflow.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins\vendor-prefixes.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\mixins.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\button-groups.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\buttons.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\code.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\dropdowns.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\footer.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\forms.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\glyphicons.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\input-groups.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\local-fonts.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\login.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\navbar.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\pager.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\pagination.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\palette.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\progress-bars.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\radiocheck.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\scaffolding.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\select.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\share.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\slider.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\switch.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\tagsinput.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\thumbnails.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\tiles.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\todo-list.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\tooltip.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\type.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\typeahead.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\modules\video.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\spaces.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\less\variables.less" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\package.json" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Flat-UI-master\README.md" />
+    <Content Include="App_Data\OH_eigenes_Projekt\HannusWeb_Eigenbau.css~" />
+    <Content Include="App_Data\OH_eigenes_Projekt\HannusWeb_Eigenbau.html~" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\.gitignore" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\js\jquery-1.10.2.min.map" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Kickstart-master\js\jquery-2.0.3.min.map" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Lukasmarkt.pdf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\mit bunten flat icons\HannusWeb_mit bunten Flat icons.html~" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Navigation der Apple HP.html~" />
+    <Content Include="App_Data\OH_eigenes_Projekt\SAP Zertifikat.pdf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Unterseite_aboutUs.html~" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Unterseite_Downloads.html~" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Unterseite_Impressum.html~" />
+    <Content Include="App_Data\OH_eigenes_Projekt\woothemes-FlexSlider-version-2.2.2-0-gce5441b.zip" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\.gitignore" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\changelog.md" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\config.rb" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\package.json" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\Readme.md" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\docs\assets\css\_screen.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\docs\assets\css\layout.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\add-ons\accessible-tabs\tabs.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\add-ons\microformats\microformats.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\add-ons\rtl-support\core\base-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\add-ons\rtl-support\forms\gray-theme-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\add-ons\rtl-support\navigation\hlist-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\add-ons\rtl-support\navigation\vlist-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\add-ons\rtl-support\screen\typography-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\core\base.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\core\iehacks.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\forms\gray-theme.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\navigation\hlist.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\navigation\vlist.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\print\print.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\screen\grid-960gs-12.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\screen\grid-960gs-16.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\screen\grid-blueprint.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\screen\grid-fluid-12col.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\screen\screen-FULLPAGE-layout.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\screen\screen-PAGE-layout.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\static-build\screen\typography.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\_yaml-var-globals.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\_yaml-var-typography.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\accessible-tabs\_tabs.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\microformats\_microformats.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\rtl-support\core\_base-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\rtl-support\forms\_gray-theme-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\rtl-support\navigation\_hlist-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\rtl-support\navigation\_vlist-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\add-ons\rtl-support\screen\_typography-rtl.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\_base.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\_iehacks.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\base-modules\_accessibility.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\base-modules\_columns.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\base-modules\_float-handling.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\base-modules\_forms-core.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\base-modules\_grids-core.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\base-modules\_normalization.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\core\base-modules\_print-core.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\forms\_gray-theme.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\mixins\_yaml-mixins-core.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\navigation\_hlist.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\navigation\_vlist.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\print\_print.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\screen\_grid-960gs-12.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\screen\_grid-960gs-16.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\screen\_grid-blueprint.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\screen\_grid-fluid-12col.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\screen\_screen-FULLPAGE-layout.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\screen\_screen-PAGE-layout.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\yaml412-130728\sass\yaml-sass\screen\_typography.scss" />
+    <Content Include="App_Data\OH_eigenes_Projekt\Zertifikat_Interner Auditor SGS.pdf" />
+    <Content Include="App_Data\OH_eigenes_Projekt\zip%27s\Flat-UI-master.zip" />
+    <Content Include="App_Data\OH_eigenes_Projekt\zip%27s\Kickstart-master.zip" />
+    <Content Include="App_Data\OH_eigenes_Projekt\zip%27s\yaml412-130728.zip" />
+    <None Include="Jumpstart\Tag1\Tag1\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Jumpstart\Tag1\Tag1\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Jumpstart\Tag1\video\video.ogv" />
+    <Content Include="Jumpstart\Tag2\Tag2.v12.suo" />
+    <Content Include="Jumpstart\Tag2\Tag2\bin\Tag2.dll.config" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\CSC63DED5AF6BBA49D09C2AAF5CF22FA3E0.TMP" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Jumpstart\Tag2\Tag2\obj\Debug\Tag2.csprojResolveAssemblyReference.cache" />
+    <Content Include="Jumpstart\Tag2\Tag2\Web.config" />
+    <None Include="Jumpstart\Tag2\Tag2\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Jumpstart\Tag2\Tag2\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Jumpstart\Tag3\Tag3.v12.suo" />
+    <Content Include="Jumpstart\Tag3\Tag3\bin\Tag3.dll.config" />
+    <Content Include="Jumpstart\Tag3\Tag3\data\day.json" />
+    <Content Include="Jumpstart\Tag3\Tag3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Jumpstart\Tag3\Tag3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Jumpstart\Tag3\Tag3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Jumpstart\Tag3\Tag3\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Jumpstart\Tag3\Tag3\obj\Debug\Tag3.csprojResolveAssemblyReference.cache" />
+    <Content Include="Jumpstart\Tag3\Tag3\Web.config" />
+    <None Include="Jumpstart\Tag3\Tag3\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Jumpstart\Tag3\Tag3\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\Startup.Auth.vb" />
+    <Compile Include="Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Startup.vb" />
+    <Compile Include="ViewSwitcher.ascx.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Jumpstart\Tag1\Tag1\obj\Debug\TempPE\" />
+    <Folder Include="Jumpstart\Tag2\Tag2\obj\Debug\TempPE\" />
+    <Folder Include="Jumpstart\Tag3\Tag3\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53690</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53690/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

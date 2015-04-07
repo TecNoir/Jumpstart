@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8" />
+    <title>Beispiel 5 - Formulare</title>
+</head>
+<body>
+    <!-- action:Ziel für Formularbearbeitung z.B. form.asp
+         method: get (URL) oder post (Hintergrund) Datenübertragung -->
+    <form name="testform" action="#" method="get" enctype="text/plain">
+        <fieldset>
+            <legend>Testformular</legend>
+            Vorname: <input type="text" name="vorname" /><br />
+            Nachname: <input type="text" name="nachname" /><br />
+            <hr />
+            <!-- Checkbox -->
+            <input type="checkbox" name="Fahrzeug" value="Fahrrad" />Fahrrad<br />
+            <input type="checkbox" name="Fahrzeug" value="Auto" />Auto<br />
+            <hr />
+            <!-- Radiobutton -->
+            <input type="radio" name="Geschlecht" value="m" checked />Männlich<br />
+            <input type="radio" name="Geschlecht" value="w" />Weiblich<br />
+            <hr />
+            <!-- Auswahlliste -->
+            <select name="Autos">
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="trabi">Trabant</option>
+            </select>
+            <hr />
+            <!-- Textarea -->
+            <textarea rows="10" cols="30">
+                Platzhalter Text
+            </textarea>
+            <hr />
+
+            <!-- Buttons -->
+            <input type="button" value="Einfacher Button" />
+            <input type="submit" value="Formular Absenden" />
+        </fieldset>
+    </form>
+</body>
+</html>

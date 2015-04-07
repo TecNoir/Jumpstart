@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Die Dritte Übung zu Variablen</title>
+    <style>
+        .Eingabeformular {
+            background-color: lightyellow;
+            color: mediumvioletred;
+            text-align: center;
+            font-size: x-large;
+            font-family: Carlito;
+            font-style: italic;
+            width: 600px;
+            height: 400py;
+
+        }
+
+
+
+    </style>
+
+
+    <script type="text/javascript">
+        function display() {
+            var Bandname = document.getElementById("Bandname");
+            alert(Bandname.value);
+        };
+    </script>
+    </head>
+<body>
+    <form class="Eingabeformular">
+        Geben Sie hier den Namen der Band ein: <input type="text" id="Bandname" />
+
+        <button type="button" onclick="display()">Anzeigen
+        </button>
+
+
+    </form>
+
+</body>
+</html>

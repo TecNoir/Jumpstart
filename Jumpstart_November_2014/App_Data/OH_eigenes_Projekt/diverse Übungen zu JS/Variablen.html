@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Variablen</title>
+        <script type="text/javascript">
+            // die Funktion "display" soll den vom User eingegebenen Namen per ID aus der Variablen holen und als Alert anzeigen //
+        function display() {
+            var name = document.getElementById("name");
+            alert(name.value);
+        };
+
+        
+    </script>
+</head>
+<body>
+    <!--Erstellung eines kleinen Formulars mit Eingabefeld und Bezeichnung sowie einem button als onlclick-Eventhandler, der die oben definierte Funktion ausführt-->
+    <form>
+        Name: <input type="text" id="name" />
+        <button type="button" onclick="display()">Anzeigen</button>
+    </form>
+</body>
+</html>

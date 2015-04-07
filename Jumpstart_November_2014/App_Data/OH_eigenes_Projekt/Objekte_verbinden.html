@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Objekte miteinander verbinden und verschachteln</title>
+    <script type="text/javascript">
+        window.defaultStatus = "Das ist die Homepage Objekte verbinden";
+
+    </script>
+</head>
+<body>
+    <h3>Die Spieler der Mannschaft</h3>
+    <script type="text/javascript">
+        function Mannschaft (Mannschaftsname, Mannschaftssportart, Kapitaen)
+        {
+            this.Name = Mannschaftsname;
+            this.Art = Mannschaftssportart;
+            this.Kapitaen = Kapitaen;
+        }
+
+        function Person (PersonName, PersonVorname, Geschlecht, Position)
+        {
+            this.Name = PersonName;
+            this.Vorname = PersonVorname;
+            this.Geschlecht = Geschlecht;
+            this.Position = Position;
+
+        }
+
+        var Hannus = new Person("Hannus", "Oliver", "männlich", "Abwehr");
+        var Mayen = new Mannschaft("Tus", "Hockey", Hannus);
+
+        document.write("<p>", Mayen.Name, "", Mayen.Art);
+        document.write("<br>Kapitän: ", Mayen.Kapitaen.Vorname, "", Mayen.Kapitaen.Name, ", ", Mayen.Kapitaen.Geschlecht);
+        document.write("<br>Position: ", Mayen.Kapitaen.Position);
+
+        var Sabrina = new Person("Hannus", "Sabrina", "weiblich", "Sturm");
+        var Huerth = new Mannschaft("THC Hürth", "Hockey", Sabrina);
+
+        document.write("<p>", Huerth.Name, "", Huerth.Art);
+        document.write("<br>Kapitän: ", Huerth.Kapitaen.Vorname, "", Huerth.Kapitaen.Name, ", ", Huerth.Kapitaen.Geschlecht);
+        document.write("<br>Position: ", Huerth.Kapitaen.Position);
+
+
+    </script>
+
+</body>
+</html>

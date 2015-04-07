@@ -1,0 +1,35 @@
+﻿body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    width:700px;
+    border: 1px dotted white;
+    text-align:center;
+}
+
+form {
+   width:700px;
+   border-width: 1px;
+   border-style: groove;
+   background-color: gold;
+   color:purple;
+   padding:10px;
+}
+
+input {
+    margin:10px;
+    width:500px;
+}
+
+.info {
+    color: red;
+    padding: 10px;
+    display:inline-block;
+    width: 370px;
+}
+
+.title {
+    display:inline-block;
+    width:150px;
+}

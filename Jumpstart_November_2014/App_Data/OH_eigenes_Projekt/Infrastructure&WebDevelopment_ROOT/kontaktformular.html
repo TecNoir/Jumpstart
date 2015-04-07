@@ -1,0 +1,80 @@
+<!doctype>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Contact</title>
+	<style>
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#cssmenu {
+	background: #00bffF;
+	width: auto;
+	height: 100px;
+	margin: 0;
+	padding-top: 0;
+}
+
+form {
+	text-align: center;
+	margin-left: 450px;
+	margin-top: 100px;
+	}
+fieldset {
+	width: 920px;
+	height: 620px;
+
+	background: #f5f5f5;
+
+}
+
+.Fcss {
+	border: 1px solid #666666;
+	margin: 2px;
+
+}
+</style>
+</head>
+<body>
+   <div id="wrapper">
+   <div id="cssmenu">
+   </div>
+
+
+		<form name="contact" action="form-mailer.php" method="post" enctype="text/plain">
+			<fieldset>
+				<legend>Ihre Nachricht an uns</legend>
+					<input type="text" name="vorname" value="Vorname" size="30" class="Fcss" /><br />
+					<input type="text" name="nachname" value="Nachname" size="30" class="Fcss" /><br />
+					<input type="text" name="firma" value="Firma" size="30" class="Fcss" /><br />
+					<input type="text" name="wohnort" value="Wohnort" size="30" class="Fcss" /><br />
+					<input type="text" name="email" value="Email" size="30" class="Fcss" /><br />
+					<hr />
+					<textarea name="eingabefeld" rows="16" cols="50"
+					maxlength="500" wrap="soft">
+					</textarea>
+					<hr />
+					<input type="button" value="Absenden" onclick="sendForm()"/ >
+					<input type="button" value="Zurücksetzen" onclick="clearForm()"/ >
+			</fieldset>	
+		</form>
+	<script>
+		function sendForm () {
+			window.document.forms[0].submit();
+			
+		};
+		function clearForm() {
+			window.document.forms[0].reset();
+		};
+
+		window.document.forms[0].action = "Formular.aspx";
+	</script>
+
+
+</div>
+</body>
+</html>

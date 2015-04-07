@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Funktionen</title>
+    <meta charset="utf-8" />
+</head>
+<body onload="loaded()">
+    <button type="button" onclick="button()">
+        Funktion aufrufen
+    </button>
+
+    <script type="text/javascript">
+
+    function func() {
+        // eigentliche Funktion
+    };
+
+    // FUnktionsaufruf
+    func();
+
+    function loaded() {
+        console.log("Seite geladen");
+        alert("Seite geladen");
+        document.write("Seite geladen");
+    };
+
+    function button() {
+        //alert('Button gedrückt');
+
+        // Funktion aufrufen
+        var output = multiply(5, 6);
+
+        // Ausgeben
+        alert(output);
+    };
+
+    function multiply(a, b) {
+        var y = a * b;
+
+        return y;
+    };
+
+    </script>
+
+</body>
+</html>

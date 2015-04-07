@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JavaScript Ausführungsreihenfolge</title>
+    <!-- Ausgabe ist nicht innerhalb einer Funktion, wird deswegen sofort ausgeführ-->
+    <!-- Die Funktion zeigeInfo() wird definiert, aber noch nicht ausgeführt-->
+    <script type="text/javascript">
+        document.write("Ausgabe aus dem Kopfbereich!<br>");
+            function zeigeInfo() {
+            document.write("Sie haben die Funktion zeigeInfo aufgerufen.");
+        }
+      </script>
+</head>
+<body>
+        <script type="text/javascript">
+            document.write("Ausgabe aus dem Rumpfbereich!<br>");
+        </script>
+    <!-- beim Aktivieren des Hyperlinks wird die Funktion zeigeInfo() ausgeführt-->
+    <a href="javascript:zeigeInfo();">Informationen anzeigen</a>
+
+</body>
+</html>

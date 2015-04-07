@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Objekte JS 01</title>
+    <script>
+
+        // "Klasse" Raumschiff -> Konstruktorfunktion -> Prototype
+        function Raumschiff(Name, Modell, Kapitan) {
+            this.Name = Name;
+            this.Modelll = Modell;
+            this.Kapitan = Kapitan;
+            //this.flieg = Fliegen;
+            this.flieg = function Fliegen () {
+                alert("schub!");
+            }
+        }
+
+        // "Klasse" Kapitän -> Konstruktorfunktion
+        function Kapitan(Name) {
+            this.Name = Name;
+        }
+
+        // Funktion -> wird Methode in Klasse
+        function Fliegen() {
+            document.write("Auf zum Saturn");
+        }
+
+        // Objekte -> Instanzen der Klassen
+        var Kirk = new Kapitan("Kirk");
+
+        var Enterprise = new Raumschiff("Enterprise", "R2D2", Kirk);
+
+        delete Kirk.Name;
+
+       document.write(Enterprise.Kapitan.Name);
+
+       Enterprise.flieg();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

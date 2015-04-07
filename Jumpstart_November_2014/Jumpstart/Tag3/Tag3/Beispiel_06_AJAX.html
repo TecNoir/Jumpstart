@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AJAX</title>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Eventlistener auf Button Klick
+            $('#get').click(function(){
+                // Daten laden -> Kurzschreibweise
+                $.getJSON("/data/day.json", function (data) {
+                    // Ausdrucken auf Screen
+                    $.each(data, function (i, val) {
+                        $('<li>' + val + '</li>').appendTo('#output');
+                    });
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <h3>JQuery AJAX</h3>
+    <button type="button" id="get">JSON</button>
+    <p>
+        Wochentage
+        <ul id="output"></ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿body {
+    font-family: 'Microsoft Himalaya';
+    font-size: 14px;
+}
+
+
+#header {
+    border: 1px groove;
+    background-color: lightyellow;
+    text-align: center;
+
+}
+
+
+#mainnav {
+    float: left;
+    margin: 0;
+    padding: 0 1%;
+    border: 0;
+    width: 18%;
+}
+
+#mainnav h3, #mainnav ul {
+    margin: 0.3em;
+    list-style: none;
+}
+
+#mainnav ul {
+    padding-left: 0.5em;
+}
+
+#mainnav li {
+    padding: 0.2em 0;
+    }
+
+#main {
+    margin: 0;
+    padding: 0 2%;
+    float: left;
+    border: 0;
+    width: 76%;
+    }
+
+#footer {
+    clear: both;
+    border-top: 1px groove;
+    text-align: center;
+    height: 70px;
+    background-color: lightyellow;
+
+}

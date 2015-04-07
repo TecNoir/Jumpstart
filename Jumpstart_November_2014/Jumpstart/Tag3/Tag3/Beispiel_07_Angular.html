@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<head>
+    <title>Angular JS - Data Binding Beispiel</title>
+    <script src="js/angular.min.js"></script>
+</head>
+<body>
+    <input type="text" ng-model="eintext" />
+    <!-- Hier erfolgt 2-weg Datenbindung -->
+    <h1 ng-show="eintext">Hallo {{ eintext }}</h1>
+
+    <!-- Angular JS Filter -->
+    <h4>Großschreibung: {{ eintext | uppercase }}</h4>
+    <h4>Kleinschreibung: {{ eintext | lowercase }}</h4>
+</body>
+</html>

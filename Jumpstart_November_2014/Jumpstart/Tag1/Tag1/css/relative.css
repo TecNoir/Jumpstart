@@ -1,0 +1,9 @@
+﻿body {
+    font-family: 'Comic Sans MS';
+}
+
+#div2 {
+    position: relative;
+    top: 15px;
+    left: 30px;
+}

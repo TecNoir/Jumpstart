@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Wie ein Objekt erzeugt wird</title>
+</head>
+<body>
+    <script type="text/javascript">
+            
+        function Familie (Oliver, Vater, Sabrina, Claas)
+        {
+            this.oName = Oliver;
+            this.sName = Sabrina;
+            this.cName = Claas;
+            this.Beschreibung = Vater;
+        
+        
+        }
+
+        var Hannus = new Familie("Oliver", "Vater", "Sabrina", "Claas");
+           
+        document.write("<p>",Hannus.oName);
+        document.write("<p>", Hannus.sName);
+        document.write("<p>",Hannus.cName);
+        document.write("<p>", Hannus.Beschreibung, "<br>");
+
+
+        function Sport (Mayen, München, Hamburg, Köln)
+        {
+            this.yOrt = Mayen;
+            this.mOrt = München;
+            this.hOrt = Hamburg;
+            this.kOrt = Köln;
+
+        }
+
+        var Hockey = new Sport("Mayen", "München", "Hamburg", "Köln")
+
+        document.write(Hockey.hOrt);
+        console.log(Hockey.mOrt);
+
+
+        
+    </script>
+    
+</body>
+</html>

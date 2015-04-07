@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JS Kontrollstrukturen - For Schleife</title>
+    <script type="text/javascript">
+
+        function load() {
+            var oContent = document.getElementById("content");
+            var sOutput = " ";
+
+            for (var i = 1; i < 12; i++) {
+
+                sOutput = sOutput + i + "<br/>";
+            }
+
+            oContent.innerHTML = sOutput;
+            oContent.innerHTML += "Spielern. Und der Trainer?";
+        };
+    </script>
+</head>
+<body onload="load()">
+    <p>Eine Fussballmanschaft besteht aus...</p>
+    <div id="content">
+        <!-- Ausgabe aus JavaScript -->
+    </div>
+</body>
+</html>

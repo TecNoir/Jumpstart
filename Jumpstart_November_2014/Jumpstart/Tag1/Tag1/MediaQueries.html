@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries - Styles nach Auflösung laden</title>
+    <meta charset="utf-8" />
+    <style>
+        p {
+            font-family:Verdana;
+        }
+    </style>
+    <style>
+        /* Media Queries inline - Problem viel CSS im Dokument */
+        /* Default Layout: Größere Screens wie Desktop oder Laptop */
+        @media screen and (min-width: 1200px) {
+            /* Style Definition */
+            p{
+                font-family:'Comic Sans MS';
+            }
+        }
+
+        /* Kleinere Layouts: Tablets */
+        @media screen and (max-width: 1199px) and (min-width: 401px) {
+        
+        }
+
+        /* Phone -> klein */
+        @media screen and (max-width: 400px) {
+        
+        }
+    </style>
+    <!-- Dynamisches Laden der externen CSS Dateien -->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="Desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1199px) and (min-width:401px)" href="tablet.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="phone.css" />
+</head>
+<body>
+    <h1>Media Query Test</h1>
+    <p>Hallo Welt</p>
+</body>
+</html>

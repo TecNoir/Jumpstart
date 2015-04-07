@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Positionierung von DIV Elementen</title>
+    <!-- Statische Positionierung: DEFAULT, Elemente werden dort angezeigt, wo sie im HTML Flow erscheinen -->
+    <style>
+        p {
+            margin: 0px;
+        }
+
+        div {
+            border: solid;
+            border-color: black;
+        }
+
+        #div1 {
+            background-color: yellow;
+        }
+
+        #div2 {
+            background-color: cyan;
+        }
+
+        #div3 {
+            background-color:lightcoral;
+        }
+
+        #div4 {
+            background-color:orange;
+        }
+
+        #div5 {
+            background-color: lightblue;
+        }
+
+        #div6 {
+            background-color: lightgray;
+        }
+    </style>
+    <!-- Relative Positionierung: Elemente können von der default Position verschoben werden -->
+    <!--<link href="css/relative.css" rel="stylesheet" />-->
+
+    <!-- Orientiert sich am oberen RAnd des Browser Fensters (0/0) -->
+    <!--<link href="css/absolute.css" rel="stylesheet" />-->
+
+    <!-- Fixed Position: Ähnlich absolut, relativ zum Brpwserfenster -->
+    <link href="css/fixed.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="div1">
+        <p>Das ist der erste Absatz</p>
+    </div>
+    <div id="div2">
+        <p>
+            Das ist der zweite Absatz.
+        </p>
+        <div id="div3">
+            <p>
+                Das ist der dritte Absatz Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div id="div4">
+            <p>
+                Das ist der vierte Absatz Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div id="div5">
+            <p>
+            Das ist der fünfte Absatz Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+    <div id="div6">
+        <p>
+            Das ist der sechste Absatz.
+        </p>
+    </div>
+</body>
+</html>
